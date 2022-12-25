@@ -3,12 +3,15 @@
   margin: o;
   box-sizing: border-box;
   outline: 0;
-  transition: all 0.8s ease-in;
+  transition: all .5s ease-in;
 }
 
 body {
   font-family: sans-serif;
-  
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(79,51,176,1),
+    rgba(210,53,165));
 }
 
 a {
@@ -16,18 +19,13 @@ a {
   color: #fff
 }
 
-body {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(79,51,176,1),
-    rgba(210,53,165));
-}
 
 .container {
   height: 100vh;
   width: 100vw;
   display: grid;
-  place-items: center;
+  justify-items: center;
+  /* place-items: center; */
 }
 
 .calculator {
@@ -78,13 +76,13 @@ body {
   justify-content: flex-end;
   margin-bottom: 20px;
   font-size: 30px;
-  overflow-x: scroll;
+  /* overflow-x: scroll;  */
 }
 
-#display::-webkit-scrollbar {
+/* #display::-webkit-scrollbar {
   display: block;
   height: 3px;
-}
+} */
 
 button {
   height: 60px;
